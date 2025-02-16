@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Outil de Veille",
+    "version": "1.0",
+    "description": "Partage un lien directement sur Discord",
+    "permissions": ["activeTab", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "man-mage-dark.png"
+    }
+  }
+  

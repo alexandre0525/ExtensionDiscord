@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partage vers Discord</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Partage vers Discord</h1>
+        
+        <!-- Ajout d'un champ pour écrire un message -->
+        <div class="message-container">
+            <label for="messageInput" class="message-label">N'oubliez pas de rajouter un petit commentaire !</label>
+            <textarea id="messageInput" class="message-input" placeholder="Écrivez un message..."></textarea>
+        </div>        
+
+        <!-- Sélection du tag -->
+        <label for="tagSelect">Choisissez un tag :</label>
+        <select id="tagSelect">
+            <option value="">Sélectionnez un tag</option>
+            <option value="cool">🔥 Cool</option>
+            <option value="shitpost">😂 Shitpost</option>
+            <option value="work">💼 Work</option>
+        </select>
+
+        <!-- Sélection du channel -->
+        <label for="channelSelect">Choisissez le salon où vous voulez l'envoyer :</label>
+        <select id="channelSelect">
+            <option value="">Sélectionnez un salon</option>
+            <!-- Liste dynamique des salons sera ajoutée ici -->
+        </select>
+
+        <button id="sendButton">Envoyer le lien</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
